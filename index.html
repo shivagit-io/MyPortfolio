@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiva Kumar Tulasi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu nav-left">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-logo nav-right">
+                <a href="#home">SKT</a>
+                <img src="photo_editor_ds_1708515490379.jpg" alt="Shiva Kumar Tulasi" class="avatar-photo-navbar" />
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles-bg" id="hero-particles"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-inline-avatar">
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="highlight">Shiva Kumar Tulasi</span> 👋
+                        </h1>
+                    </div>
+                    <h2 class="hero-subtitle">
+                        Aspiring Software Engineer | Java Backend Developer | REST API Specialist
+                    </h2>
+                    <p class="hero-location">
+                        <i class="fas fa-map-marker-alt"></i> Hyderabad, India
+                    </p>
+                    <p class="hero-tagline">
+                        "Crafting robust backend systems and seamless APIs with Java & Spring Boot."
+                    </p>
+                    <div class="hero-contact">
+                        <a href="mailto:shivathulasi7@gmail.com" class="contact-btn">
+                            <i class="fas fa-envelope"></i> shivathulasi7@gmail.com
+                        </a>
+                    </div>
+                    <a href="Shiva-Resume1.pdf" class="resume-btn" download>
+                        <i class="fas fa-file-download"></i> Download Resume
+                    </a>
+                    <div class="social-links">
+                        <a href="https://github.com/shivagit-io" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/shiva-kumar" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Wavy SVG Shape Divider -->
+        <div class="hero-divider">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:80px;">
+                <defs>
+                    <linearGradient id="heroWaveGradient" x1="0" y1="0" x2="1440" y2="120" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#181a20" stop-opacity="0.98"/>
+                        <stop offset="1" stop-color="#000" stop-opacity="0.98"/>
+                    </linearGradient>
+                </defs>
+                <path d="M0,80 C360,160 1080,0 1440,80 L1440,120 L0,120 Z" fill="url(#heroWaveGradient)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Avatar Modal Popup -->
+    <div id="avatar-modal" class="avatar-modal">
+        <div class="avatar-modal-overlay"></div>
+        <div class="avatar-modal-content">
+            <button class="avatar-modal-close" id="avatar-modal-close">&times;</button>
+            <img src="photo_editor_ds_1708515490379.jpg" alt="Shiva Kumar Tulasi" class="avatar-modal-photo" />
+        </div>
+    </div>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="particles-bg" id="techstack-particles"></div>
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-tools"></i> Tech Stack
+            </h2>
+            <div class="techstack-grid">
+                <div class="techstack-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="techstack-items">
+                        <div class="techstack-item" title="Java (J2SE, J2EE)">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                            <span>Java</span>
+                        </div>
+                        <div class="techstack-item" title="Spring Boot">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" />
+                            <span>Spring Boot</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="techstack-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="techstack-items">
+                        <div class="techstack-item" title="Oracle DB">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle DB" />
+                            <span>Oracle DB</span>
+                        </div>
+                        <div class="techstack-item" title="MySQL">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+                            <span>MySQL</span>
+                        </div>
+                        <div class="techstack-item" title="SQL">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="SQL" />
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="techstack-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="techstack-items">
+                        <div class="techstack-item" title="HTML5">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+                            <span>HTML5</span>
+                        </div>
+                        <div class="techstack-item" title="CSS3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+                            <span>CSS3</span>
+                        </div>
+                        <div class="techstack-item" title="JavaScript">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="techstack-category">
+                    <h3><i class="fas fa-toolbox"></i> Tools</h3>
+                    <div class="techstack-items">
+                        <div class="techstack-item" title="Git">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                            <span>Git</span>
+                        </div>
+                        <div class="techstack-item" title="Postman">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" />
+                            <span>Postman</span>
+                        </div>
+                        <div class="techstack-item" title="Eclipse">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" />
+                            <span>Eclipse</span>
+                        </div>
+                        <div class="techstack-item" title="IntelliJ">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" />
+                            <span>IntelliJ</span>
+                        </div>
+                        <div class="techstack-item" title="VS Code">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SVG Divider -->
+    <!-- Removed divider for a seamless transition -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-briefcase"></i> Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" />
+                        </div>
+                        <h3 class="project-title">NomNow — RESTful Food Ordering API</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/shivagit-io/NomNow" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-badges">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">Oracle</span>
+                    </div>
+                    <p class="project-tagline">Scalable RESTful APIs for food delivery, with role-based access and order tracking.</p>
+                    <ul class="project-features">
+                        <li>Menu CRUD operations</li>
+                        <li>Role-based Access (User/Admin)</li>
+                        <li>Order Tracking system</li>
+                        <li>Tested and documented with Postman</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h3 class="project-title">Grand-Aura Hotel — Hotel Management System</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/shivagit-io/Grand-Aura" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-badges">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                    <p class="project-tagline">Java backend for hotel reservations, guest management, and billing.</p>
+                    <ul class="project-features">
+                        <li>Reservation management</li>
+                        <li>Guest information handling</li>
+                        <li>Billing system</li>
+                        <li>Reliable data handling with MySQL and JDBC</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="project-title">Capital-Root Bank — Core Banking App</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/shivagit-io/Capital-Root-Bank" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-badges">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                    <p class="project-tagline">Secure banking backend with authentication and smooth fund transfers.</p>
+                    <ul class="project-features">
+                        <li>User authentication system</li>
+                        <li>Account management</li>
+                        <li>Transaction processing</li>
+                        <li>Console-based UI with secure authentication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-graduation-cap"></i> Education
+            </h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-icon"><i class="fas fa-university"></i></div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <span class="education-degree">B.Tech</span>
+                            <span class="education-year">2022 – 2026</span>
+                        </div>
+                        <h3 class="education-institution">Sreyas Institute of Engineering & Technology</h3>
+                        <div class="education-badge">Computer Science & Engineering</div>
+                        <div class="education-achievement">CGPA: <span>7.11</span></div>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon"><i class="fas fa-school"></i></div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <span class="education-degree">Higher Secondary</span>
+                            <span class="education-year">2020 – 2022</span>
+                        </div>
+                        <h3 class="education-institution">Alphores Junior College</h3>
+                        <div class="education-badge">Higher Secondary</div>
+                        <div class="education-achievement">Score: <span>62.4%</span></div>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon"><i class="fas fa-user-graduate"></i></div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <span class="education-degree">Secondary School</span>
+                            <span class="education-year">2020</span>
+                        </div>
+                        <h3 class="education-institution">Dr. Radhakrishnan High School</h3>
+                        <div class="education-badge">Secondary School</div>
+                        <div class="education-achievement">CGPA: <span>8.8</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-certificate"></i> Certifications
+            </h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                    </div>
+                    <div class="certification-title">Java Programming</div>
+                    <div class="certification-provider">GeeksForGeeks</div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Frontend" />
+                    </div>
+                    <div class="certification-title">Frontend Development</div>
+                    <div class="certification-provider">One Roadmap</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="languages">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-language"></i> Languages
+            </h2>
+            <div class="languages-badges">
+                <span class="language-badge">
+                    <span class="flag-icon">🇬🇧</span> English
+                </span>
+                <span class="language-badge">
+                    <span class="flag-icon">🇮🇳</span> Hindi
+                </span>
+                <span class="language-badge">
+                    <span class="flag-icon">🇮🇳</span> Telugu
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-heart"></i> Hobbies
+            </h2>
+            <div class="hobbies-badges">
+                <span class="hobby-badge"><i class="fas fa-plane-departure"></i> Traveling</span>
+                <span class="hobby-badge"><i class="fas fa-code"></i> Coding Side Projects</span>
+                <span class="hobby-badge"><i class="fas fa-music"></i> Music</span>
+                <span class="hobby-badge"><i class="fas fa-dumbbell"></i> Fitness & Sports</span>
+                <span class="hobby-badge"><i class="fas fa-gamepad"></i> Gaming</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-envelope"></i> Contact Me
+            </h2>
+            <div class="contact-badges-grid">
+                <div class="contact-badge">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-badge-info">
+                        <span class="contact-badge-label">Email</span>
+                        <a href="mailto:shivathulasi7@gmail.com">shivathulasi7@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-badge">
+                    <i class="fas fa-phone"></i>
+                    <div class="contact-badge-info">
+                        <span class="contact-badge-label">Phone</span>
+                        <a href="tel:+919490683968">+91-9490683968</a>
+                    </div>
+                </div>
+                <div class="contact-badge">
+                    <i class="fab fa-github"></i>
+                    <div class="contact-badge-info">
+                        <span class="contact-badge-label">GitHub</span>
+                        <a href="https://github.com/shivagit-io" target="_blank">shivagit-io</a>
+                    </div>
+                </div>
+                <div class="contact-badge">
+                    <i class="fab fa-linkedin"></i>
+                    <div class="contact-badge-info">
+                        <span class="contact-badge-label">LinkedIn</span>
+                        <a href="https://linkedin.com/in/shiva-kumar" target="_blank">Shiva Kumar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Shiva Kumar Tulasi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
